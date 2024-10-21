@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrogenesis</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            padding: 20px;
+            text-align: center;
+        }
+        header img {
+            max-width: 150px;
+        }
+        nav {
+            background-color: #333;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            color: #ffab00;
+        }
+        section {
+            padding: 50px;
+            opacity: 0;
+            transition: opacity 1s ease-in;
+        }
+        section.visible {
+            opacity: 1;
+        }
+        section h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        section p {
+            font-size: 18px;
+            line-height: 1.8;
+        }
+        .learn-more {
+            color: #ffab00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .learn-more:hover {
+            text-decoration: underline;
+        }
+        .features {
+            list-style-type: none;
+            padding: 0;
+        }
+        .features li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .features img {
+            margin-right: 15px;
+            width: 100px;
+            height: auto;
+        }
+        .product-series {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .product {
+            width: 30%;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .product img {
+            width: 120px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .main-image {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+        }
+        .contact-form {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: #f0f0f0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            max-width: 500px;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .title {
+            text-align: center;
+            font-size: 40px;
+            margin: 30px 0;
+            color: #4CAF50;
+        }
+
+        /* Updated "What Our Partners Say" section */
+        #testimonials {
+            background-color: #f0f0f0;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .testimonials {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+        .testimonial {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            position: relative;
+        }
+        .quote-icon {
+            position: absolute;
+            top: -15px;
+            left: 15px;
+            width: 30px;
+        }
+        .quote {
+            font-style: italic;
+            font-size: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .author {
+            font-weight: bold;
+            color: #4CAF50;
+            margin-top: 10px;
+        }
+
+        /* Responsive Design */
+        @media (min-width: 768px) {
+            .testimonials {
+                flex-direction: row;
+                justify-content: center;
+            }
+            .testimonial {
+                max-width: 40%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="Company Logo">
+</header>
+
+<div class="title">
+    <h1>Agrogenesis</h1>
+</div>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Shop</a>
+    <a href="#">Services</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</nav>
+
+<section id="prototype">
+    <h2>Eco-Resilient Plant Prototype</h2>
+    <p>Harnessing nature's adaptive power to improve water efficiency, drought resistance, and climate resilience.</p>
+    
+    <img src="prototype.png" alt="Eco-Resilient Plant Prototype" class="main-image">
+
+    <a href="#" class="learn-more">Shop Now</a> | <a href="#" class="learn-more">Learn More</a>
+</section>
+
+<section id="agriculture">
+    <h2>The Future of Sustainable Agriculture</h2>
+    <p>Our plant prototype is engineered to thrive in challenging environments, offering enhanced water efficiency, drought resistance, and climate resilience. Developed through advanced cellular adaptations, these plants require reduced irrigation while maintaining strong growth and productivity.</p>
+    <ul class="features">
+        <li><img src="waterefficiency.png" alt="Water Efficiency Icon"> Enhanced Water Efficiency</li>
+        <li><img src="drought.png" alt="Drought Resistance Icon"> Drought Resistance</li>
+        <li><img src="cellular.png" alt="Cellular Adaptations Icon"> Cellular Adaptations</li>
+        <li><img src="climate.png" alt="Climate Resilience Icon"> Climate Resilience</li>
+        <li><img src="irrigation.png" alt="Reduced Irrigation Icon"> Reduced Irrigation</li>
+    </ul>
+</section>
+
+<section id="plant-series">
+    <h2>Our Plant Series</h2>
+    <div class="product-series">
+        <div class="product">
+            <img src="water_series.png" alt="Water Saver Series">
+            <h3>Water Saver Series</h3>
+            <p>Low water requirement.</p>
+            <p>$50 AUD</p>
+        </div>
+        <div class="product">
+            <img src="drought_defender.png" alt="Drought Defender Series">
+            <h3>Drought Defender Series</h3>
+            <p>Extreme heat tolerance.</p>
+            <p>$75 AUD</p>
+        </div>
+        <div class="product">
+            <img src="climate_warrior.png" alt="Climate Warrior Series">
+            <h3>Climate Warrior Series</h3>
+            <p>General resilience.</p>
+            <p>$100 AUD</p>
+        </div>
+    </div>
+</section>
+
+<section id="testimonials">
+    <h2>What Our Partners Say</h2>
+    <div class="testimonials">
+        <div class="testimonial">
+            <img src="say.png" alt="Quote Icon" class="quote-icon">
+            <p class="quote">"These plants have transformed our ability to farm in dry climates. We've never seen such resilience!"</p>
+            <p class="author">- Farmer John, NSW</p>
+        </div>
+        <div class="testimonial">
+            <img src="say.png" alt="Quote Icon" class="quote-icon">
+            <p class="quote">"The water-saving technology in these plants is incredible. We're seeing a 30% reduction in irrigation needs."</p>
+            <p class="author">- Eco Farms, VIC</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact-form">
+    <h2>Contact Us</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 Eco-Resilient Farming. All rights reserved.</p>
+    <a href="#">Home</a> | <a href="#">Shop</a> | <a href="#">About</a> | <a href="#">Contact</a>
+    <p>
+        <a href="#"><img src="instagram.png" alt="Instagram" width="30"></a>
+        <a href="#"><img src="fb.png" alt="Facebook" width="30"></a>
+    </p>
+</footer>
+
+<script>
+    // Fade-in effect for sections on scroll
+    const sections = document.querySelectorAll('section');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+</script>
+
+</body>
+</html>
